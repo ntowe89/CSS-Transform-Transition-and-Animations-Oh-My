@@ -2,3 +2,47 @@ button{
     background-color: ghostwhite;
     transition-duration: 2s;
 }
+.caption{
+    position: relative;
+    overflow: hidden;
+}
+.caption_media{
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    
+}
+.caption_overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(99%);
+    transition: transform .35s ease-out;
+    color: white;
+}
+.caption_overlay h1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(-44%,-5%);
+    
+}
+.caption_overlay p{
+    text-align: center;
+}
+.caption:hover .caption_overlay{
+    transform: translateY(5%);
+}
+
+
+
+
+
+
+
+
